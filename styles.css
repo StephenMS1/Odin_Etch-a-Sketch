@@ -14,14 +14,27 @@ h1 {
 }
 
 #gridContainer {
-    width: 960px;
-    height: 960px;
+    width: 500px;
+    height: 500px;
     display: flex;
     flex-direction: row;
+    gap: 0;
+}
+
+.gridRow {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    
 }
 
 .square {
-    height: 8px;
-    width: 8px;
-    border: 2px solid black;
+    flex: 1;
+    height: 4px;
+    width: auto;
+    border: 1px solid black;
+}
+
+.selected {
+    background-color: blue;
 }
