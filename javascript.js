@@ -1,4 +1,4 @@
-let rainbowColors = ['green', 'yellow', 'rebeccapurple'];
+let rainbowColors = ['green', 'yellow', 'rebeccapurple', 'blue', 'turquoise', 'red'];
 
 //get variables from webpage
 
@@ -102,7 +102,7 @@ function sketching(userColor) {
     squares.forEach((square) => {
         square.addEventListener('mouseenter', () => {
             if (rainbowMode.classList.contains('selectedButton')) {   //Tried to add a random selection from rainbowColors doesn't appear to work. Appears to be only selecting rainbowColors[0]
-                userColor = rainbowColors[(Math.floor(Math.random()))*3];
+                userColor = rainbowColors[(Math.floor(Math.random()*(rainbowColors.length)))];
             }
             square.style.backgroundColor = userColor
         })
